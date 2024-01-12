@@ -1,0 +1,11 @@
+php_flag display_startup_errors off
+
+php_flag display_errors off
+
+php_flag html_errors off
+
+php_value short_open_tag 1
+
+rewriteEngine on
+
+rewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
